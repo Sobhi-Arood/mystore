@@ -1,0 +1,3 @@
+1. if paste a url with /cart/{productId}?qty={1} it will add to the cart.
+
+2. if success/error message displayed on profile page then change the page and come back it will still there.
