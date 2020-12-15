@@ -27,13 +27,13 @@ const PlaceOrderScreen = ({ history }) => {
   ).toFixed(2);
 
   const orderCreate = useSelector((state) => state.orderCreate);
-  const { order, success, error } = orderCreate;
+  const { success, error, order } = orderCreate;
 
   useEffect(() => {
     if (success) {
       history.push(`/order/${order._id}`);
     }
-  }, [history, success, order._id]);
+  }, [history, success, order?._id]);
 
   const placeOrderHandler = () => {
     dispatch(
