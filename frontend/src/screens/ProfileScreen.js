@@ -33,16 +33,16 @@ const ProfileScreen = ({ history }) => {
     if (!userInfo) {
       history.push('/login');
     } else {
-      if (!user.name) {
+      if (!user || !user.name || success) {
+        dispatch({ type: USER_UPDATE_PROFILE_RESET });
         dispatch(getUserDetails('profile'));
         dispatch(listMyOrders());
       } else {
-        dispatch({ type: USER_UPDATE_PROFILE_RESET });
         setName(user.name);
         setEmail(user.email);
       }
     }
-  }, [history, userInfo, dispatch, user]);
+  }, [history, userInfo, dispatch, user, success]);
 
   const submitHandler = (e) => {
     e.preventDefault();
