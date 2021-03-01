@@ -19,7 +19,7 @@ h3 {
 .rating span {
   margin: 0.1rem;
 }
-
+/* 
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
@@ -44,4 +44,25 @@ h3 {
 
 .carousel a {
   margin: 0 auto;
+} */
+
+.bg-footer {
+  background: #ecf0f1;
+}
+
+.bg-darker {
+  background: #1a262e;
+}
+
+.bg-normal {
+  background: #2d3e4f;
+}
+
+.border-darker {
+  border-top: 1px solid rgb(37, 51, 66);
+}
+
+.jumbotron {
+  background: url('./images/pexels-karolina-grabowska-5632402.jpg') no-repeat
+    center center/cover;
 }
