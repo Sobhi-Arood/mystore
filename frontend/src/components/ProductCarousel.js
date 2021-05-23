@@ -38,15 +38,18 @@ const ProductCarousel = () => {
     <>
       <Jumbotron className='mb-0' fluid>
         <Container className='px-0'>
-          <div className='w-50 py-5'>
-            <h1 className='text-uppercase font-weight-bold text-dark'>
+          <div className='w-50 py-5 text-center'>
+            <h1 className='text-uppercase font-weight-bold text-white text-center'>
               Shopping ease
             </h1>
-            <p>
+            <p className='text-white text-center'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
               ea harum nam illum.
             </p>
-            <Button className='text-uppercase px-3' variant='light'>
+            <Button
+              className='text-uppercase text-center text-white px-3'
+              variant='dark'
+            >
               shop now
             </Button>
           </div>
